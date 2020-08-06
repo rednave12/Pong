@@ -40,16 +40,16 @@ var bounced1 = false;
 // Change paddle velocity based on keys pressed
 document.addEventListener('keydown', function (e) {
      if (e.keyCode == 87 || e.which == 87) { // W key
-      paddleVelocity = -3;
+      paddleVelocity = -2;
      }
      if (e.keyCode == 83 || e.which == 83) { // S Key
-      paddleVelocity = 3;
+      paddleVelocity = 2;
      }
      if (e.keyCode == 38 || e.which == 38) { // up arrow
-      paddleVelocity1 = -3;
+      paddleVelocity1 = -2;
      }
      if (e.keyCode == 40 || e.which == 40) { // down arrow
-      paddleVelocity1 = 3;
+      paddleVelocity1 = 2;
      }
 	 if (e.keyCode == 13 || e.which == 13) {
 		ballXVelocity = 7.5;
