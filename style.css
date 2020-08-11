@@ -1,21 +1,69 @@
+.root {
+	gameWidth: 70%;
+	gameHeight: 50%;
+}	
+
+#leftMargin {
+		position: absolute;
+		background-color: black;
+		height: 100%;
+		width: 15%;
+		left: 0%;
+		top: 0%;
+		background-image: url(lefty.png);
+		background-repeat: no-repeat;
+		background-position: right;
+}
+
+#rightMargin {
+		position: absolute;
+		height: 100%;
+		width: 15%;
+		right: 0%;
+		top: 0%;
+		background-color: black;
+		background-image: url(righty.png);
+		background-repeat: no-repeat;
+		background-position: left;
+}
+
+#topMargin {
+		position: absolute;
+		height: 10%;
+		width: 70%;
+		left: 15%;
+		top: 0%;
+		background-color: black;
+		background-image: url(border.png);
+		background-repeat: repeat-x;
+		background-position: bottom;
+}
+
+#bottomMargin {
+		position: absolute;
+		height: 40%;
+		width: 70%;
+		left: 15%;
+		top: 60%;
+		background-color: black;
+		background-image: url(borderflip.png);
+		background-repeat: repeat-x;
+		background-position: top;
+}
+	
 #paddle {
 		position: absolute;
-		/* background-color: blue; */
 		background-image: url(leopard.png);
-		height: 150px;
-		left: 500px;
-		
-		/* top: 10px; */
+		left: 20%;
 		width: 30px;
+		height: 150px;
 	}
 	
 #paddle1 {
 		position: absolute;
 		background-image: url(zebra.png);
 		height: 150px;
-		left: 1500px;
-		/* left: 150px; */
-		/* top: 10px; */
+		right: 20%;
 		width: 30px;
 	}
 	
@@ -23,18 +71,17 @@
 		background-image: url(ball.png);
 		height: 25px;
 		width: 25px;
-		/* left: 600px; */
 		border-radius: 50px;
-		/* display: inline-block; */
 		position: absolute;
 }
 
 #myCanvas {
 		position: absolute;
 		background-color: black;
-		height: 450px;
-		width: 1200px;
-		left: 400px;
+		left: 15%;
+		top: 10%;
+		width: var(gameWidth);
+		height: var(gameHeight);
 }	
 
 #title {
@@ -42,10 +89,11 @@
 		background-image: url(title.png);
 		background-repeat: no-repeat;
 		background-size: contain;
-		top: 100px;
-		left: 950px;
+		top: 20%;
+		left: 50%;
 		width: 100px;
 		height: 50px;
+		transform: translate(-50px, 0px);
 }
 
 #subtitle {
@@ -53,17 +101,69 @@
 		background-image: url(subtitle.png);
 		background-repeat: no-repeat;
 		background-size: contain;
-		top: 150px;
-		left: 920px;
+		top: 20%;
+		left: 50%;
 		width: 160px;
 		height: 50px;
+		transform: translate(-80px, 50px);
 }
 
 #line {
 		position: absolute;
 		background-color: #ff66d9;
-		top: 8px;
-		left: 999px;
+		top: 10%;
+		left: 50%;
 		width: 3px;
-		height: 450px;
+		height: 50%;
+}	
+
+h1 {
+		color: white;
+		font-family: Courier;
+		font-size: 25px;
+		margin-left: 2.5%;
+		font-weight: 500;
+		text-decoration: underline;
+}
+
+h2 {
+		color: white;
+		font-family: Arial;
+		font-size: 15px;
+		margin-left: 2.5%;
+		font-weight: 300;
+		white-space: nowrap;
+}	
+
+#ballPreview {
+		background-image: "";
+		width: 25px;
+		height: 25px;
+		border-radius: 50px;
+		position: absolute;
+		margin-left: 10px;
+}	
+#ballPreview1 {
+		background-image: "";
+		width: 25px;
+		height: 25px;
+		border-radius: 50px;
+		position: absolute;
+		margin-left: 10px;
+}	
+#ballPreview2 {
+		background-image: "";
+		width: 25px;
+		height: 25px;
+		border-radius: 50px;
+		position: absolute;
+		margin-left: 10px;
+}	
+#ballPreview3 {
+		background-image: "";
+		width: 25px;
+		height: 25px;
+		border-radius: 50px;
+		position: absolute;
+		margin-left: 10px;
 }	

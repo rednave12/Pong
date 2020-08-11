@@ -3,10 +3,37 @@
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
-
+	<title>TESTING</title>
   </head>
   <body>
-	<canvas id="myCanvas" width="1200" height="450" left="400"></canvas>
+	<canvas id="myCanvas"></canvas>
+	<div id ="leftMargin">
+		<h1 style="text-align: center; padding-right: 5%">Pick a ball!</h1>
+		
+		<br><br>
+		
+		<div id="ballPreview" style="background-image: url(ball.png)"> 
+			<h2 style="padding-left: 50px; margin: auto">Tennis Ball</h2>
+		</div> <br><br><br>
+		<div id="ballPreview1" style="background-image: url(basketball.png)">
+			<h2 style="padding-left: 50px; margin: auto">Basketball</h2>
+		</div> <br><br><br>
+		<div id="ballPreview2" style="background-image: url(eyeball.png)">
+			<h2 style="padding-left: 50px; margin: auto">Eyeball</h2>
+		</div> <br><br><br>
+		<div id="ballPreview3" style="background-image: url(meatball.png)"> 
+			<h2 style="padding-left: 50px; margin: auto">Meatball</h2>
+		</div>
+	</div>
+	<div id ="rightMargin"></div>
+	<div id ="topMargin"></div>
+	<div id ="bottomMargin">
+	<h1 style="margin-top: 2%">How To Play:</h1>
+	<h2>Paddle Movement: W/S keys for Leopard and Up/Down keys for Zebra</h2>
+	<h2>Paddles wrap vertically around the game board</h2>
+	<h2>First to 10 points wins!</h2>
+	<br>
+	</div>
 	<div id="paddle"></div>
 	<div id="paddle1"></div>
 	<div id="line"></div>
@@ -14,6 +41,7 @@
 	<div id="ctx"></div>
 	<div id="title"></div>
 	<div id="subtitle"></div>
+	<div id="border"></div>
     <script src="game.js"></script>
   </body>
 </html>
